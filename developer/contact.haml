@@ -1,0 +1,86 @@
+!!! 5
+/ paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+/[if IE 7] <html class="no-js lt-ie9 lt-ie8" lang="en">
+/[if IE 8] <html class="no-js lt-ie9" lang="en">
+/ [if gt IE 8]>
+%html.no-js{:lang => "es"}
+	%head
+		%meta{:charset => "utf-8"}/
+		/ Set the viewport width to device width for mobile
+		%meta{:content => "width=device-width", :name => "viewport"}/
+		%title Aresti de Venezuela
+		%meta{:content => "Seguridad para sus productos", :name => "description"}
+		%meta{:content => "Luis Castro, Reinaldo Bermudez", :name => "author"}
+		%meta{:content => "luisecastrom@gmail.com, reyb9@hotmail.com", :name => "contact"}
+		/ SEO
+		%meta{:content => "", :name => "robots"}
+		%meta{:content => "", :name => "googlebot"}
+		/ Included CSS Files (Compressed)
+		%link{:href => "css/styles.css", :rel => "stylesheet"}
+		%link{:href => "favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}
+		/ IE Fix for HTML5 Tags
+		/ [if lt IE 9] <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	%body
+		.container
+			.wrapper
+				/ navigation
+				.grid
+					.cols-1-3
+						.logo Aresti Logo
+						.twitter @twitterhandle
+					.cols-2-3
+						%ul
+							%li
+								Acerca
+							%li
+								Productos
+							%li
+								Contacto
+				/ slider
+				.grid#message
+					%h2
+						Crea un presupuesto
+				/ content
+				.grid
+					/ big area of content
+					.cols-2-3
+						.grid
+							.cols-1-1
+								%h6
+									Hola
+								%p
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non risus diam. Cras fermentum imperdiet lorem, eget pretium nunc fringilla at. Aliquam vel rutrum diam.
+						.grid
+							.cols-1-2
+								%p Nombre
+								%p Compañia
+								%p Correo
+								%p Mensaje
+							.cols-1-2
+								%input{:type => "text", :placeholder => ""}
+								%input{:type => "text", :placeholder => ""}
+								%input{:type => "email", :placeholder => ""}
+								%input{:type => "number", :placeholder => ""}
+								%textarea{:cols => "4", :rows => "2", :placeholder => ""}
+								%input{:type => "submit", :value => "Enviar"}
+					/ other info
+					.cols-1-3
+						%h2
+							Email
+						%span
+							hola@arestidevenezuela.com
+						%h2
+							Teléfono
+						%p
+							0241-555-5555
+						%h2
+							Dirección
+						%p
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non risus diam.
+		/ copyright
+		%footer.container
+			.wrapper
+				.grid
+					.cols-1-1
+						© 2013 Luis Castro & Reinaldo Bermudez
