@@ -27,16 +27,17 @@
 				/ navigation
 				.grid
 					.cols-1-3
-						.logo Aresti Logo
+						%a{:href => "index.html"}
+							.logo Aresti Logo
 						.twitter @twitterhandle
 					.cols-2-3
 						%ul
 							%li
-								Acerca
+								%a{:href => "about.html"}Acerca
 							%li
-								Productos
+								%a{:href => "products.html"}Productos
 							%li
-								Contacto
+								%a{:href => "contact.html"}Contacto
 				/ slider
 				.grid#message
 					%h2
@@ -79,7 +80,7 @@
 						%p
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non risus diam.
 		/ copyright
-		%footer.container
+		%footer
 			.wrapper
 				.grid
 					.cols-1-1
