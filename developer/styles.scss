@@ -1,4 +1,4 @@
-@import "reset", "grid", "fonts", "navigation", "photos", "inputs", "buttons";
+@import "reset", "grid", "fonts";
 
 //----- variables ------
 $base: #00aed7;
@@ -20,10 +20,14 @@ $source: "SourceSansProRegular", "Times New Roman", sans-serif;
 //------- code ---------
 
 //basic styles
-html,body{
+body{
 	//setting initial font
 	font-size: 16px;
 	font-family: $helvetica;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;
 	//background
 	background: $dark-2;
 	//size
@@ -31,6 +35,12 @@ html,body{
 	height: auto;
 	//position
 	margin: 2.25em auto;
+	//effect
+	overflow-y: scroll;
+}
+
+body{
+	max-width: 1282px;
 }
 
 .container{
@@ -42,3 +52,5 @@ html,body{
 	-webkit-box-shadow: $box-shadow-element;
 	box-shadow: $box-shadow-element;
 }
+
+@import "navigation", "content", "photos", "inputs", "buttons";

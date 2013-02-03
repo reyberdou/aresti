@@ -23,25 +23,27 @@
 		/ [if lt IE 9] <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	%body
 		.container
+			%nav
+				.wrapper
+					/ navigation
+					.grid
+						.cols-1-3
+							%a{:href => "index.html"}
+								.logo Aresti Logo
+							.twitter @twitterhandle
+						.cols-2-3
+							%ul
+								%li
+									%a{:href => "about.html"}Acerca
+								%li
+									%a{:href => "products.html"}Productos
+								%li
+									%a{:href => "contact.html"}Contacto
+			/ slider
+			.grid#us
+				%img{:src => "http://placehold.it/1282x400"}
+			/ content
 			.wrapper
-				/ navigation
-				.grid
-					.cols-1-3
-						%a{:href => "index.html"}
-							.logo Aresti Logo
-						.twitter @twitterhandle
-					.cols-2-3
-						%ul
-							%li
-								%a{:href => "about.html"}Acerca
-							%li
-								%a{:href => "products.html"}Productos
-							%li
-								%a{:href => "contact.html"}Contacto
-				/ slider
-				.grid#us
-					%img{:src => "http://placehold.it/1100x400"}
-				/ content
 				.grid
 					/ big area of content
 					.cols-2-3

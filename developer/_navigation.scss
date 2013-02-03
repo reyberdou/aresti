@@ -18,3 +18,61 @@ $source: "SourceSansProRegular", "Times New Roman", sans-serif;
 //------- code ---------
 
 //basic styles
+nav{
+	//background and colors
+	background: $dark-1;
+	color: $dark-2;
+	//text
+	font-family: $helvetica;
+	font-size: 0.8em;
+	line-height: 1em;
+	//size
+	height: 63px;
+	padding: 2em 0 0;
+	ul{
+		//position
+		float: right;
+		li{
+			//display type
+			display: inline-block;
+			//position
+			margin-right: 2em;
+		}
+	}
+	//links
+	a{
+		color: darken($dark-2, 30%);
+		text-decoration: none;
+		-webkit-transition: $transition;
+		-moz-transition: $transition;
+		-ms-transition: $transition;
+		-o-transition: $transition;
+		transition: $transition;
+		&:hover{
+			color: $dark-2;
+		}
+	}
+	//logo
+	.logo{
+		//position
+		float: left;
+		margin: -1em 0 0 -4.5em;
+		position: absolute;
+		//background
+		background: url('http://placehold.it/50x40') no-repeat;
+		//text
+		text-indent: -9999px;
+		//size
+		height: 40px;
+		width: 50px;
+	}
+	//twitter handle
+	.twitter{
+		//position
+		float: left;
+		margin: 0 0 0 1em;
+		//text
+		color: darken($dark-2, 30%);
+		text-decoration: none;
+	}
+}

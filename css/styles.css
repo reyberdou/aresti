@@ -103,15 +103,79 @@ table {
   font-weight: normal;
   font-style: normal; }
 
-html, body {
+body {
   font-size: 16px;
   font-family: "Helvetica Neue", Helvetica, Arial, serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
   background: #e2e2e2;
   width: 90%;
   height: auto;
-  margin: 2.25em auto; }
+  margin: 2.25em auto;
+  overflow-y: scroll; }
+
+body {
+  max-width: 1282px; }
 
 .container {
   background: #fefefe;
   -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.2); }
+
+nav {
+  background: #121314;
+  color: #e2e2e2;
+  font-family: "Helvetica Neue", Helvetica, Arial, serif;
+  font-size: 0.8em;
+  line-height: 1em;
+  height: 63px;
+  padding: 2em 0 0; }
+  nav ul {
+    float: right; }
+    nav ul li {
+      display: inline-block;
+      margin-right: 2em; }
+  nav a {
+    color: #969696;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    nav a:hover {
+      color: #e2e2e2; }
+  nav .logo {
+    float: left;
+    margin: -1em 0 0 -4.5em;
+    position: absolute;
+    background: url("http://placehold.it/50x40") no-repeat;
+    text-indent: -9999px;
+    height: 40px;
+    width: 50px; }
+  nav .twitter {
+    float: left;
+    margin: 0 0 0 1em;
+    color: #969696;
+    text-decoration: none; }
+
+.highlight_section {
+  background: #eeeeee;
+  margin: -0.1em 0 0; }
+
+.item {
+  height: auto;
+  margin: 1.5em 0; }
+  .item h2 {
+    font-size: 1.125em;
+    line-height: 1.2em;
+    font-weight: bold;
+    margin: 0 0 1em 0;
+    background: transparent url("../img/arrow.png") no-repeat right 60%; }
+  .item p {
+    font-size: 0.9375em;
+    line-height: 1.6em;
+    color: #797979;
+    text-align: justify; }
