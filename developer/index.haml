@@ -1,0 +1,86 @@
+!!! 5
+/ paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+/[if IE 7] <html class="no-js lt-ie9 lt-ie8" lang="en">
+/[if IE 8] <html class="no-js lt-ie9" lang="en">
+/ [if gt IE 8]>
+%html.no-js{:lang => "es"}
+	%head
+		%meta{:charset => "utf-8"}/
+		/ Set the viewport width to device width for mobile
+		%meta{:content => "width=device-width", :name => "viewport"}/
+		%title Aresti de Venezuela
+		%meta{:content => "Seguridad para sus productos", :name => "description"}
+		%meta{:content => "Luis Castro, Reinaldo Bermudez", :name => "author"}
+		%meta{:content => "luisecastrom@gmail.com, reyb9@hotmail.com", :name => "contact"}
+		/ SEO
+		%meta{:content => "", :name => "robots"}
+		%meta{:content => "", :name => "googlebot"}
+		/ Included CSS Files (Compressed)
+		%link{:href => "css/styles.css", :rel => "stylesheet"}
+		%link{:href => "favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}
+		/ IE Fix for HTML5 Tags
+		/ [if lt IE 9] <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	%body
+		.container
+			%nav
+				.wrapper
+					/ navigation
+					.grid
+						.cols-1-3
+							%a{:href => "index.html"}
+								.logo Aresti Logo
+							.twitter @twitterhandle
+						.cols-2-3
+							%ul
+								%li
+									%a{:href => "about.html"}Acerca
+								%li
+									%a{:href => "products.html"}Productos
+								%li
+									%a{:href => "contact.html"}Contacto
+			/ slider
+			#slider
+				%img{:src => "http://placehold.it/1282x400"}
+			/ content
+			.highlight_section
+				.wrapper
+					.grid
+						.cols-1-3.item
+							%h2
+								¿Quiénes somos?
+							%p
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada erat eu diam eleifend tincidunt. Fusce tincidunt arcu in risus ornare commodo. Ut viverra ligula ac diam ultricies hendrerit. Nunc ultrices, justo vitae ultricies sagittis, odio purus semper ante, laoreet rhoncus est erat sollicitudin est.
+						.cols-1-3.item
+							%h2
+								Nuestro trabajo
+							%p
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada erat eu diam eleifend tincidunt. Fusce tincidunt arcu in risus ornare commodo. Ut viverra ligula ac diam ultricies hendrerit. Nunc ultrices, justo vitae ultricies sagittis, odio purus semper ante, laoreet rhoncus est erat sollicitudin est.
+						.cols-1-3.item
+							%h2
+								¿Dónde estamos?
+							%p
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada erat eu diam eleifend tincidunt. Fusce tincidunt arcu in risus ornare commodo. Ut viverra ligula ac diam ultricies hendrerit. Nunc ultrices, justo vitae ultricies sagittis, odio purus semper ante, laoreet rhoncus est erat sollicitudin est.
+				/ Products
+			.wrapper
+				.grid
+					/ big image
+					.cols-2-3
+						%img{:src => "http://placehold.it/650x400"}
+					.cols-1-3
+						%h2.title.clients
+							Clientela
+						%p
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada erat eu diam eleifend tincidunt. Fusce tincidunt arcu in risus ornare commodo. Ut viverra ligula ac diam ultricies hendrerit. Nunc ultrices, justo vitae ultricies sagittis, odio purus semper ante, laoreet rhoncus est erat sollicitudin est.
+						%h2.title.install
+							Instalación
+						%p
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada erat eu diam eleifend tincidunt. Fusce tincidunt arcu in risus ornare commodo. Ut viverra ligula ac diam ultricies hendrerit. Nunc ultrices, justo vitae ultricies sagittis, odio purus semper ante, laoreet rhoncus est erat sollicitudin est.
+						.button
+							Leer más
+		/ copyright
+		%footer
+			.wrapper
+				.grid
+					.cols-1-1
+						© 2013 Luis Castro & Reinaldo Bermudez
