@@ -67,11 +67,11 @@ table {
 
 @media only screen and (max-width: 480px) {
   .cols-1-1, .cols-1-2, .cols-1-3, .cols-2-3 {
-    width: 100%; } }
+    width: 90%; } }
 
 /* Opt-in outside padding */
 .grid-pad {
-  padding: 20px 0 20px 20px; }
+  padding: 0 0 20px 0; }
   .grid-pad [class*='col-']:last-of-type {
     padding-right: 20px; }
 
@@ -181,6 +181,8 @@ h2.title {
   font-weight: bold;
   margin: 1em 0 0.5em 0;
   padding: 0 0 0 2em; }
+  h2.title.no-pad {
+    padding: 0; }
 
 p {
   font-size: 0.9375em;
@@ -188,6 +190,64 @@ p {
   color: #797979;
   text-align: justify; }
 
+footer p {
+  float: left;
+  font-size: 0.95em;
+  font-weight: bold;
+  line-height: 2em;
+  color: #959595;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6); }
+
+input[type*='text'], input[type*='email'], input[type*='number'], textarea {
+  width: 99%;
+  padding: 7px 12px;
+  vertical-align: top;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1), 0 1px 0 white;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1), 0 1px 0 white;
+  -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-family: "SourceSansProRegular", "Times New Roman", sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: 300;
+  text-align: right;
+  text-transform: capitalize; }
+
 .button {
   padding: 0.5em 1em;
   max-width: 150px; }
+  .button.blue {
+    background: #00aed7;
+    color: #fff;
+    float: right;
+    margin: 0 0 0.7em 0;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    border: none; }
+    .button.blue[value*='Enviar'] {
+      float: left;
+      margin: 1em 0 0.7em 0;
+      font-family: "SourceSansProLight", "Times New Roman", sans-serif;
+      font-size: 1em;
+      font-weight: normal; }
+
+.product {
+  height: 300px; }
+  .product img {
+    width: 350px;
+    margin: 0 auto; }
+
+.contact_header p {
+  text-align: left;
+  line-height: 2.65em; }

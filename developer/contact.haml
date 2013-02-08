@@ -48,25 +48,26 @@
 				.grid
 					/ big area of content
 					.cols-2-3
-						.grid
+						.grid.grid-pad
 							.cols-1-1
 								%h6
 									Hola
 								%p
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non risus diam. Cras fermentum imperdiet lorem, eget pretium nunc fringilla at. Aliquam vel rutrum diam.
-						.grid
-							.cols-1-2
+						.grid.grid-pad
+							.cols-1-3.contact_header
 								%p Nombre
 								%p Compañia
 								%p Correo
+								%p Teléfono
 								%p Mensaje
 							.cols-1-2
 								%input{:type => "text", :placeholder => ""}
 								%input{:type => "text", :placeholder => ""}
 								%input{:type => "email", :placeholder => ""}
 								%input{:type => "number", :placeholder => ""}
-								%textarea{:cols => "4", :rows => "2", :placeholder => ""}
-								%input{:type => "submit", :value => "Enviar"}
+								%textarea{:cols => "42", :rows => "5", :placeholder => ""}
+								%input.button.blue{:type => "submit", :value => "Enviar"}
 					/ other info
 					.cols-1-3
 						%h2
@@ -86,4 +87,4 @@
 			.wrapper
 				.grid
 					.cols-1-1
-						© 2013 Luis Castro & Reinaldo Bermudez
+						%p © 2013 Luis Castro & Reinaldo Bermudez

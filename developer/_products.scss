@@ -1,7 +1,6 @@
 //----- variables ------
 $base: #00aed7;
 $inverted: #89c53b;
-$radius: 25px;
 //colors goes from 1 to 2, being 1 the most condensed and 2 the lightest
 //light-grays
 $light-1: #eeeeee;
@@ -20,33 +19,13 @@ $source: "SourceSansProRegular", "Times New Roman", sans-serif;
 
 //basic styles
 
-.button{
+.product{
 	//size
-	padding: 0.5em 1em;
-	max-width: 150px;
-
-	//index read more button
-	&.blue{
-		//color
-		background: $base;
-		color: #fff;
+	height: 300px;
+	& img{
+		//size
+		width: 350px;
 		//position
-		float: right;
-		margin: 0 0 0.7em 0;
-		//effects
-		-webkit-border-radius: $radius;
-		border-radius: $radius;
-		//border
-		border: none;
-		//if value is 'enviar' apply
-		&[value*='Enviar']{
-			//position
-			float: left;
-			margin: 1em 0 0.7em 0;
-			//text
-			font-family: $source_light;
-			font-size: 1em;
-			font-weight: normal;
-		}
+		margin: 0 auto;
 	}
 }

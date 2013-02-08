@@ -52,6 +52,9 @@ h2.title{
 	//position
 	margin: 1em 0 0.5em 0;
 	padding: 0 0 0 2em;
+	&.no-pad{
+		padding: 0;
+	}
 }
 
 p{
@@ -60,4 +63,16 @@ p{
 	line-height: 1.6em;
 	color: $dark-3;
 	text-align: justify;
+}
+
+footer p{
+	//position
+	float: left;
+	//text
+	font-size: 0.95em;
+	font-weight: bold;
+	line-height: 2em;
+	//colors
+	color: darken($light-1, 35%);
+	text-shadow: 0 1px 0 rgba(255,255,255,.6);
 }

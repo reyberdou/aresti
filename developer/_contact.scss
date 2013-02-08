@@ -1,14 +1,14 @@
 //----- variables ------
 $base: #00aed7;
 $inverted: #89c53b;
-$radius: 25px;
 //colors goes from 1 to 2, being 1 the most condensed and 2 the lightest
 //light-grays
 $light-1: #eeeeee;
-$light-2: #fbfbfb;
+$light-2: #fefefe;
 //dark-grays
 $dark-1: #121314;
 $dark-2: #e2e2e2;
+$dark-3: #797979;
 //effects
 $transition: all 0.3s ease-in-out;
 //fonts
@@ -20,33 +20,11 @@ $source: "SourceSansProRegular", "Times New Roman", sans-serif;
 
 //basic styles
 
-.button{
-	//size
-	padding: 0.5em 1em;
-	max-width: 150px;
-
-	//index read more button
-	&.blue{
-		//color
-		background: $base;
-		color: #fff;
+.contact_header{
+	p{
 		//position
-		float: right;
-		margin: 0 0 0.7em 0;
-		//effects
-		-webkit-border-radius: $radius;
-		border-radius: $radius;
-		//border
-		border: none;
-		//if value is 'enviar' apply
-		&[value*='Enviar']{
-			//position
-			float: left;
-			margin: 1em 0 0.7em 0;
-			//text
-			font-family: $source_light;
-			font-size: 1em;
-			font-weight: normal;
-		}
+		text-align: left;
+		//text
+		line-height: 2.65em;
 	}
 }
