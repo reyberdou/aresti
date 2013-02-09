@@ -171,6 +171,86 @@ nav {
       nav .twitter {
         margin: 0 0 0 5em; } }
 
+input[type*='text'], input[type*='email'], input[type*='tel'], textarea {
+  width: 99%;
+  padding: 7px 12px;
+  vertical-align: top;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1), 0 1px 0 white;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1), 0 1px 0 white;
+  -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-family: "SourceSansProRegular", "Times New Roman", sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: 300;
+  text-align: right;
+  text-transform: capitalize; }
+
+textarea, input[type*='email'] {
+  text-transform: none; }
+
+textarea {
+  resize: none; }
+
+.button {
+  padding: 0.5em 1em;
+  max-width: 150px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .button.blue {
+    background: #00aed7;
+    color: #fff;
+    float: right;
+    margin: 0 0 0.7em 0;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    border: none; }
+    .button.blue[value*='Enviar'] {
+      float: left;
+      margin: 1em 0 0.7em 0;
+      font-family: "SourceSansProLight", "Times New Roman", sans-serif;
+      font-size: 1em;
+      font-weight: normal; }
+    .button.blue:hover {
+      background: #005b71;
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      -ms-transition: all 0.1s ease-in-out;
+      -o-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out; }
+    .button.blue:active {
+      background: #0085a4; }
+
+.product {
+  height: 300px; }
+  .product img {
+    width: 350px;
+    margin: 0 auto; }
+    @media screen and (max-width: 1400px) {
+      .product img {
+        width: 310px; } }
+
+.contact_header {
+  width: 47%; }
+  .contact_header p {
+    text-align: left;
+    line-height: 2.65em; }
+
 .highlight_section {
   background: #eeeeee;
   margin: -0.1em 0 0; }
@@ -266,64 +346,14 @@ footer p {
   border-top: 1px solid rgba(226, 226, 226, 0.8);
   margin: 0 0 2.75em 0; }
 
-input[type*='text'], input[type*='email'], input[type*='tel'], textarea {
-  width: 99%;
-  padding: 7px 12px;
-  vertical-align: top;
-  display: inline-block;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.03);
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1), 0 1px 0 white;
-  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1), 0 1px 0 white;
-  -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  font-family: "SourceSansProRegular", "Times New Roman", sans-serif;
-  font-size: 1em;
-  line-height: 1em;
-  font-weight: 300;
-  text-align: right;
-  text-transform: capitalize; }
+.text-justify {
+  text-align: justify !important; }
 
-textarea, input[type*='email'] {
-  text-transform: none; }
+.text-center {
+  text-align: center !important; }
 
-.button {
-  padding: 0.5em 1em;
-  max-width: 150px; }
-  .button.blue {
-    background: #00aed7;
-    color: #fff;
-    float: right;
-    margin: 0 0 0.7em 0;
-    -webkit-border-radius: 25px;
-    border-radius: 25px;
-    border: none; }
-    .button.blue[value*='Enviar'] {
-      float: left;
-      margin: 1em 0 0.7em 0;
-      font-family: "SourceSansProLight", "Times New Roman", sans-serif;
-      font-size: 1em;
-      font-weight: normal; }
+.text-left {
+  text-align: left !important; }
 
-.product {
-  height: 300px; }
-  .product img {
-    width: 350px;
-    margin: 0 auto; }
-    @media screen and (max-width: 1400px) {
-      .product img {
-        width: 310px; } }
-
-.contact_header {
-  width: 47%; }
-  .contact_header p {
-    text-align: left;
-    line-height: 2.65em; }
+.text-right {
+  text-align: right !important; }

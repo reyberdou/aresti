@@ -24,7 +24,16 @@ $source: "SourceSansProRegular", "Times New Roman", sans-serif;
 	//size
 	padding: 0.5em 1em;
 	max-width: 150px;
-
+	//effects
+	cursor: pointer;
+	//variable
+	$transition: all 0.3s ease-in-out;
+	//transition
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-ms-transition: $transition;
+	-o-transition: $transition;
+	transition: $transition;
 	//index read more button
 	&.blue{
 		//color
@@ -47,6 +56,22 @@ $source: "SourceSansProRegular", "Times New Roman", sans-serif;
 			font-family: $source_light;
 			font-size: 1em;
 			font-weight: normal;
+		}
+		&:hover{
+			//background
+			background: darken($base, 20%);
+			//variable
+			$transition: all 0.1s ease-in-out;
+			//transition
+			-webkit-transition: $transition;
+			-moz-transition: $transition;
+			-ms-transition: $transition;
+			-o-transition: $transition;
+			transition: $transition;
+		}
+		&:active{
+			//background
+			background: darken($base, 10%);
 		}
 	}
 }

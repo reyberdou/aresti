@@ -55,3 +55,7 @@ input[type*='text'], input[type*='email'], input[type*='tel'], textarea{
 textarea, input[type*='email']{
 	text-transform: none;
 }
+
+textarea{
+	resize: none;
+}
