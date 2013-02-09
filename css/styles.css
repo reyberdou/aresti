@@ -36,10 +36,13 @@ table {
 .wrapper {
   margin: 0 auto;
   width: 1140px; }
-  @media only screen and (max-width: 768px) {
+  @media screen and (max-width: 1400px) {
     .wrapper {
-      width: 740px; } }
-  @media only screen and (max-width: 480px) {
+      width: 1000px; } }
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      width: 650px; } }
+  @media screen and (max-width: 480px) {
     .wrapper {
       width: 460px; } }
 
@@ -155,15 +158,71 @@ nav {
     text-indent: -9999px;
     height: 40px;
     width: 50px; }
+    @media screen and (max-width: 768px) {
+      nav .logo {
+        margin: -1em 0 0 0em; } }
   nav .twitter {
     float: left;
     margin: 0 0 0 1em;
     color: #969696;
     text-decoration: none; }
+    @media screen and (max-width: 768px) {
+      nav .twitter {
+        margin: 0 0 0 5em; } }
 
 .highlight_section {
   background: #eeeeee;
   margin: -0.1em 0 0; }
+
+.big-text-spacing {
+  line-height: 3.5em; }
+
+.highlight-text {
+  background: #00aed7;
+  width: 100%;
+  height: 45px;
+  padding: 0.5em 1em;
+  vertical-align: middle;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 1px 1px 3px 0px rgba(0, 0, 0, 0.2); }
+  .highlight-text p {
+    font-family: "SourceSansProRegular", "Times New Roman", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    letter-spacing: 3.5px; }
+    @media screen and (max-width: 768px) {
+      .highlight-text p {
+        letter-spacing: -2.5px; } }
+    .highlight-text p a {
+      text-decoration: none;
+      color: #fff;
+      -webkit-transition: color 0.3s ease-in-out;
+      -moz-transition: color 0.3s ease-in-out;
+      -ms-transition: color 0.3s ease-in-out;
+      -o-transition: color 0.3s ease-in-out;
+      transition: color 0.3s ease-in-out; }
+      .highlight-text p a:hover {
+        color: #36393c;
+        -webkit-transition: color 0.1s ease-in-out;
+        -moz-transition: color 0.1s ease-in-out;
+        -ms-transition: color 0.1s ease-in-out;
+        -o-transition: color 0.1s ease-in-out;
+        transition: color 0.1s ease-in-out; }
+      .highlight-text p a:active {
+        color: #b5b9bc; }
+
+#message {
+  height: 75px;
+  margin: 0 0 1.75em 0;
+  background: #eeeeee;
+  font-family: "SourceSansProLight", "Times New Roman", sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 3.3em;
+  color: #73797f;
+  text-transform: uppercase; }
 
 .item {
   height: auto;
@@ -198,7 +257,7 @@ footer p {
   color: #959595;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6); }
 
-input[type*='text'], input[type*='email'], input[type*='number'], textarea {
+input[type*='text'], input[type*='email'], input[type*='tel'], textarea {
   width: 99%;
   padding: 7px 12px;
   vertical-align: top;
@@ -224,6 +283,9 @@ input[type*='text'], input[type*='email'], input[type*='number'], textarea {
   text-align: right;
   text-transform: capitalize; }
 
+textarea, input[type*='email'] {
+  text-transform: none; }
+
 .button {
   padding: 0.5em 1em;
   max-width: 150px; }
@@ -247,6 +309,9 @@ input[type*='text'], input[type*='email'], input[type*='number'], textarea {
   .product img {
     width: 350px;
     margin: 0 auto; }
+    @media screen and (max-width: 1400px) {
+      .product img {
+        width: 310px; } }
 
 .contact_header p {
   text-align: left;

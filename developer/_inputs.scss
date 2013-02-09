@@ -19,7 +19,7 @@ $source: "SourceSansProRegular", "Times New Roman", sans-serif;
 
 //basic styles
 
-input[type*='text'], input[type*='email'], input[type*='number'], textarea{
+input[type*='text'], input[type*='email'], input[type*='tel'], textarea{
 	//size
 	width: 99%;
 	padding: 7px 12px;
@@ -50,4 +50,8 @@ input[type*='text'], input[type*='email'], input[type*='number'], textarea{
 	font-weight: 300;
 	text-align: right;
 	text-transform: capitalize;
+}
+
+textarea, input[type*='email']{
+	text-transform: none;
 }
