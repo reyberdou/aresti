@@ -157,3 +157,15 @@ footer p{
 	color: darken($light-1, 35%);
 	text-shadow: 0 1px 0 rgba(255,255,255,.6);
 }
+
+.border-right{
+	//effects
+	border-right: 1px solid rgba($dark-2, 0.8);
+}
+
+.border-top{
+	//effects
+	padding: 1.5em 0 0 0;
+	border-top: 1px solid rgba($dark-2, 0.8);
+	margin: 0 0 2.75em 0;
+}

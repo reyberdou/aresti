@@ -74,7 +74,8 @@ table {
 
 /* Opt-in outside padding */
 .grid-pad {
-  padding: 0 0 20px 0; }
+  padding: 0 20px 40px 0;
+  margin: 0; }
   .grid-pad [class*='col-']:last-of-type {
     padding-right: 20px; }
 
@@ -257,6 +258,14 @@ footer p {
   color: #959595;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6); }
 
+.border-right {
+  border-right: 1px solid rgba(226, 226, 226, 0.8); }
+
+.border-top {
+  padding: 1.5em 0 0 0;
+  border-top: 1px solid rgba(226, 226, 226, 0.8);
+  margin: 0 0 2.75em 0; }
+
 input[type*='text'], input[type*='email'], input[type*='tel'], textarea {
   width: 99%;
   padding: 7px 12px;
@@ -313,6 +322,8 @@ textarea, input[type*='email'] {
       .product img {
         width: 310px; } }
 
-.contact_header p {
-  text-align: left;
-  line-height: 2.65em; }
+.contact_header {
+  width: 47%; }
+  .contact_header p {
+    text-align: left;
+    line-height: 2.65em; }
