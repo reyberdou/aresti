@@ -60,10 +60,10 @@ nav{
 	.logo{
 		//position
 		float: left;
-		margin: -1.2em 0 0 -4.5em;
+		margin: -0.6em 0 0 -4.5em;
 		position: absolute;
 		//background
-		background: url(../img/logo.png) no-repeat;
+		background: url(../img/logo2.png) no-repeat;
 		//text
 		text-indent: -9999px;
 		//size
@@ -71,7 +71,7 @@ nav{
 		width: 50px;
 		@media screen and (max-width: 768px){
 			//position
-			margin: -1.2em 0 0 0em;
+			margin: -0.6em 0 0 0em;
 		}
 		&:hover{
 			opacity: 0.8;
