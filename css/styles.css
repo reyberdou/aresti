@@ -151,17 +151,23 @@ nav {
     transition: all 0.3s ease-in-out; }
     nav a:hover {
       color: #e2e2e2; }
+    nav a.selected_page {
+      color: #fff; }
   nav .logo {
     float: left;
-    margin: -1em 0 0 -4.5em;
+    margin: -1.2em 0 0 -4.5em;
     position: absolute;
-    background: url("http://placehold.it/50x40") no-repeat;
+    background: url(../img/logo.png) no-repeat;
     text-indent: -9999px;
     height: 40px;
     width: 50px; }
     @media screen and (max-width: 768px) {
       nav .logo {
-        margin: -1em 0 0 0em; } }
+        margin: -1.2em 0 0 0em; } }
+    nav .logo:hover {
+      opacity: 0.8; }
+    nav .logo:active {
+      opacity: 0.7; }
   nav .twitter {
     float: left;
     margin: 0 0 0 1em;
@@ -345,6 +351,11 @@ footer p {
   padding: 1.5em 0 0 0;
   border-top: 1px solid rgba(226, 226, 226, 0.8);
   margin: 0 0 2.75em 0; }
+
+ul.with_styles {
+  list-style: inherit; }
+  ul.with_styles li {
+    margin: 0 0 0 30px; }
 
 .text-justify {
   text-align: justify !important; }

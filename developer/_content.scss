@@ -170,6 +170,15 @@ footer p{
 	margin: 0 0 2.75em 0;
 }
 
+//this class serves the purpose to give the ul a look of decoration
+ul.with_styles{
+	list-style: inherit;
+	li{
+		$pad: 30px;
+		margin: 0 0 0 $pad;
+	}
+}
+
 //-------------- helper classes ----------------
 .text-justify{text-align: justify !important;}
 .text-center{text-align: center !important;}

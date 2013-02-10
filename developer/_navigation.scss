@@ -51,15 +51,19 @@ nav{
 		&:hover{
 			color: $dark-2;
 		}
+		&.selected_page{
+			//effects
+			color: #fff;
+		}
 	}
 	//logo
 	.logo{
 		//position
 		float: left;
-		margin: -1em 0 0 -4.5em;
+		margin: -1.2em 0 0 -4.5em;
 		position: absolute;
 		//background
-		background: url('http://placehold.it/50x40') no-repeat;
+		background: url(../img/logo.png) no-repeat;
 		//text
 		text-indent: -9999px;
 		//size
@@ -67,7 +71,13 @@ nav{
 		width: 50px;
 		@media screen and (max-width: 768px){
 			//position
-			margin: -1em 0 0 0em;
+			margin: -1.2em 0 0 0em;
+		}
+		&:hover{
+			opacity: 0.8;
+		}
+		&:active{
+			opacity: 0.7;
 		}
 	}
 	//twitter handle
