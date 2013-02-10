@@ -221,6 +221,9 @@ select {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
+  .button a {
+    text-decoration: none;
+    color: #fff; }
   .button.blue {
     background: #00aed7;
     color: #fff;

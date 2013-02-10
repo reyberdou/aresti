@@ -34,6 +34,11 @@ $source: "SourceSansProRegular", "Times New Roman", sans-serif;
 	-ms-transition: $transition;
 	-o-transition: $transition;
 	transition: $transition;
+	//links inside a button class div
+	a{
+		text-decoration: none;
+		color: #fff;
+	}
 	//index read more button
 	&.blue{
 		//color
