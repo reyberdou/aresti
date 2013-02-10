@@ -41,7 +41,6 @@ $source: "SourceSansProRegular", "Times New Roman", sans-serif;
 	height: 45px;
 	//align
 	padding: 0.5em 1em;
-	vertical-align: middle;
 	//effects
 	-webkit-border-radius: $border-size;
 	border-radius: $border-size;
@@ -50,6 +49,10 @@ $source: "SourceSansProRegular", "Times New Roman", sans-serif;
 	//box-shadow
 	-webkit-box-shadow: $box-shadow;
 	box-shadow: $box-shadow;
+	@media screen and (max-width: 600px){
+		//position
+		margin: 0 0 1em;
+	}
 	p{
 		//text
 		font-family: $source;
@@ -59,6 +62,10 @@ $source: "SourceSansProRegular", "Times New Roman", sans-serif;
 		@media screen and (max-width: 768px){
 			//space
 			letter-spacing: -2.5px;
+		}
+		@media screen and (max-width: 600px){
+			//space
+			letter-spacing: 3.5px;
 		}
 		a{
 			//link effect
@@ -106,6 +113,13 @@ $source: "SourceSansProRegular", "Times New Roman", sans-serif;
 	line-height: 3.3em;
 	color: lighten($dark-1, 40%);
 	text-transform: uppercase;
+	@media only screen and (max-width: 600px) {
+		//size
+		height: 50px;
+		//text
+		font-size: 1em;
+		line-height: 3.5em;
+	}
 }
 
 .item{
@@ -161,6 +175,10 @@ footer p{
 .border-right{
 	//effects
 	border-right: 1px solid rgba($dark-2, 0.8);
+	@media screen and (max-width: 600px){
+		//border
+		border-right: none;
+	}
 }
 
 .border-top{
@@ -176,6 +194,24 @@ ul.with_styles{
 	li{
 		$pad: 30px;
 		margin: 0 0 0 $pad;
+	}
+}
+
+//show and hide
+
+.mobile-show{
+	display: none;
+	@media screen and (max-width: 600px){
+		//border
+		display: inherit;
+	}
+}
+
+.mobile-hide{
+	display: inherit;
+	@media screen and (max-width: 600px){
+		//border
+		display: none;
 	}
 }
 

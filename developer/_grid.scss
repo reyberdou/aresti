@@ -14,19 +14,26 @@ $pad: 20px;
 		width:650px;
 	}
 	@media screen and (max-width: 480px) {
-		width:460px;
+		width:400px;
 	}
 }
 
 .grid {
 	margin: 0 0 $pad 0;
 	overflow: hidden;
+	@media screen and (max-width: 600px){
+		//pad
+		padding: 0 $pad;
+	}
 }
 
 [class*='cols-'] {
 	float: left;
 	padding-right: $pad;
 	.grid &:last-of-type {
+		padding-right: 0;
+	}
+	@media only screen and (max-width: 480px) {
 		padding-right: 0;
 	}
 }
@@ -46,7 +53,7 @@ $pad: 20px;
 
 .cols-1-1, .cols-1-2, .cols-1-3, .cols-2-3{
 	@media only screen and (max-width: 480px) {
-		width:90%;
+		width:100%;
 	}
 }
 
@@ -56,5 +63,9 @@ $pad: 20px;
 	margin: 0;
 	[class*='col-']:last-of-type {
 		padding-right: $pad;
+	}
+	@media screen and (max-width: 600px){
+		//pad
+		padding: 0 $pad $pad+20 $pad;
 	}
 }

@@ -81,7 +81,7 @@
                 </p>
               </div>
             </div>
-            <div class='grid grid-pad border-right border-top'>
+            <div class='grid grid-pad border-right border-top mobile-hide'>
               <div class='cols-1-3 contact_header'>
                 <p>Nombre</p>
                 <p>Compañia</p>
@@ -91,18 +91,38 @@
                 <p>Productos</p>
               </div>
               <div class='cols-1-2'>
-                <input class='text-justify' placeholder='' type='text'>
-                <input class='text-justify' placeholder='' type='text'>
-                <input class='text-justify' placeholder='' type='email'>
-                <input class='text-justify' placeholder='' type='tel'>
-                <select>
-                  <option>Seleccione...</option>
-                  <option>Crédito 15 días</option>
-                  <option>Crédito 30 días</option>
-                  <option>Contado</option>
-                </select>
-                <textarea class='text-justify' cols='42' placeholder='Especifique nombre y cantidad...' rows='10'></textarea>
-                <input class='button blue' type='submit' value='Enviar'>
+                <form id='web-contact'>
+                  <input class='text-justify' placeholder='' type='text'>
+                  <input class='text-justify' placeholder='' type='text'>
+                  <input class='text-justify' placeholder='' type='email'>
+                  <input class='text-justify' placeholder='' type='tel'>
+                  <select>
+                    <option>Seleccione...</option>
+                    <option>Crédito 15 días</option>
+                    <option>Crédito 30 días</option>
+                    <option>Contado</option>
+                  </select>
+                  <textarea class='text-justify' cols='42' placeholder='Especifique nombre y cantidad...' rows='10'></textarea>
+                  <input class='button blue' type='submit' value='Enviar'>
+                </form>
+              </div>
+            </div>
+            <div class='grid grid-pad border-top mobile-show'>
+              <div class='cols-1-2'>
+                <form id='mobile-contact'>
+                  <input class='text-justify' placeholder='Nombre' type='text'>
+                  <input class='text-justify' placeholder='Compañia' type='text'>
+                  <input class='text-justify' placeholder='Correo Electrónico' type='email'>
+                  <input class='text-justify' placeholder='Teléfono' type='tel'>
+                  <select>
+                    <option>Tipo de Pago</option>
+                    <option>Crédito 15 días</option>
+                    <option>Crédito 30 días</option>
+                    <option>Contado</option>
+                  </select>
+                  <textarea class='text-justify' cols='42' placeholder='Especifique nombre y cantidad...' rows='10'></textarea>
+                  <input class='button blue' type='submit' value='Enviar'>
+                </form>
               </div>
             </div>
           </div>

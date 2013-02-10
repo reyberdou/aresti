@@ -37,6 +37,14 @@ body{
 	margin: 2.25em auto;
 	//effect
 	overflow-y: scroll;
+	@media screen and (max-width: 600px){
+		//size
+		width: 100%;
+		//position
+		margin: 0em auto;
+		//effect
+		overflow-x: hidden;
+	}
 }
 
 body{
@@ -51,6 +59,13 @@ body{
 	//effects
 	-webkit-box-shadow: $box-shadow-element;
 	box-shadow: $box-shadow-element;
+	@media screen and (max-width: 600px){
+		//box shadow
+		$box-shadow-element: none;
+		//effects
+		-webkit-box-shadow: $box-shadow-element;
+		box-shadow: $box-shadow-element;
+	}
 }
 
 @import "navigation";
