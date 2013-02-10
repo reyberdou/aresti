@@ -66,18 +66,26 @@
 								%p Compañia
 								%p Correo
 								%p Teléfono
+								%p Tipo de pago
 								%p Productos
 							.cols-1-2
 								%input.text-justify{:type => "text", :placeholder => ""}
 								%input.text-justify{:type => "text", :placeholder => ""}
 								%input.text-justify{:type => "email", :placeholder => ""}
 								%input.text-justify{:type => "tel", :placeholder => ""}
-								%textarea.text-justify{:cols => "42", :rows => "10", :placeholder => "Por favor especifique sus productos por Nombre o Código como aparecen en nuestra sección de productos y la cantidad que desea..."}
+								%select
+									%option Seleccione...
+									%option Crédito 15 días
+									%option Crédito 30 días
+									%option Contado
+								%textarea.text-justify{:cols => "42", :rows => "10", :placeholder => "Especifique nombre y cantidad..."}
 								%input.button.blue{:type => "submit", :value => "Enviar"}
 					/ other info
 					.cols-1-3.big-text-spacing
 						%h2
-							Proceso de solicitación
+							Proceso de solicitud
+						%p
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada erat eu diam eleifend tincidunt. Fusce tincidunt arcu in risus ornare commodo. Ut viverra ligula ac diam ultricies hendrerit. Nunc ultrices, justo vitae ultricies sagittis, odio purus semper ante, laoreet rhoncus est erat sollicitudin est. Duis et arcu nunc, a porta diam. Donec eros mauris, auctor volutpat posuere ut, varius at nulla. Nulla a ligula justo, vitae vestibulum arcu. Integer dui erat, congue a sodales et, venenatis vel ipsum. Sed ultricies leo sollicitudin velit bibendum egestas. Vivamus luctus tincidunt tristique.
 		/ copyright
 		%footer
 			.wrapper

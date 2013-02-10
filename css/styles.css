@@ -177,7 +177,7 @@ nav {
       nav .twitter {
         margin: 0 0 0 5em; } }
 
-input[type*='text'], input[type*='email'], input[type*='tel'], textarea {
+input[type*='text'], input[type*='email'], input[type*='tel'], textarea, select {
   width: 99%;
   padding: 7px 12px;
   vertical-align: top;
@@ -208,6 +208,9 @@ textarea, input[type*='email'] {
 
 textarea {
   resize: none; }
+
+select {
+  height: 30px; }
 
 .button {
   padding: 0.5em 1em;
@@ -255,7 +258,7 @@ textarea {
   width: 47%; }
   .contact_header p {
     text-align: left;
-    line-height: 2.65em; }
+    line-height: 2.50em; }
 
 .highlight_section {
   background: #eeeeee;
