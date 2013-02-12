@@ -146,7 +146,7 @@ h2.title{
 	font-weight: bold;
 	//position
 	margin: 1em 0 0.5em 0;
-	padding: 0 0 0 2em;
+	padding: 0.5em 0 0 2em;
 	&.no-pad{
 		padding: 0;
 	}
@@ -190,9 +190,9 @@ footer p{
 
 //this class serves the purpose to give the ul a look of decoration
 ul.with_styles{
-	list-style: inherit;
+	//list-style: inherit;
 	li{
-		$pad: 30px;
+		$pad: 35px;
 		margin: 0 0 0 $pad;
 	}
 }
