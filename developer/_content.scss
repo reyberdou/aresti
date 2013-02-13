@@ -1,6 +1,7 @@
 //----- variables ------
 $base: #00aed7;
 $inverted: #89c53b;
+$border-size: 10px;
 //colors goes from 1 to 2, being 1 the most condensed and 2 the lightest
 //light-grays
 $light-1: #eeeeee;
@@ -25,6 +26,86 @@ $source: "SourceSansProRegular", "Times New Roman", sans-serif;
 	background: $light-1;
 	//position
 	margin: -0.1em 0 0;
+}
+
+.big-text-spacing{
+	//text
+	line-height: 3.5em;
+}
+
+.highlight-text{
+	//background
+	background: $base;
+	//size
+	width: 100%;
+	height: 45px;
+	//align
+	padding: 0.5em 1em;
+	vertical-align: middle;
+	//effects
+	-webkit-border-radius: $border-size;
+	border-radius: $border-size;
+	//variable
+	$box-shadow: inset 1px 1px 3px 0px rgba(#000, 0.2);
+	//box-shadow
+	-webkit-box-shadow: $box-shadow;
+	box-shadow: $box-shadow;
+	p{
+		//text
+		font-family: $source;
+		font-size: 1.2em;
+		text-align: center;
+		letter-spacing: 3.5px;
+		@media screen and (max-width: 768px){
+			//space
+			letter-spacing: -2.5px;
+		}
+		a{
+			//link effect
+			text-decoration:none;
+			color: #fff;
+			//variable
+			$transition: color 0.3s ease-in-out;
+			//transition
+			-webkit-transition: $transition;
+			-moz-transition: $transition;
+			-ms-transition: $transition;
+			-o-transition: $transition;
+			transition: $transition;
+			&:hover{
+				//colored
+				color: lighten($dark-1, 15%);
+				//variable
+				$transition: color 0.1s ease-in-out;
+				//transition
+				-webkit-transition: $transition;
+				-moz-transition: $transition;
+				-ms-transition: $transition;
+				-o-transition: $transition;
+				transition: $transition;
+			}
+			&:active{
+				//colored
+				color: lighten($dark-1, 65%);
+			}
+		}
+	}
+}
+
+#message{
+	//size
+	height: 75px;
+	//position
+	margin: 0 0 1.75em 0;
+	//background
+	background: $light-1;
+	//text
+	font-family: $source_light;
+	font-size: 1.5em;
+	font-weight: 300;
+	line-height: 3.3em;
+	color: lighten($dark-1, 40%);
+	text-transform: uppercase;
 }
 
 .item{
@@ -52,6 +133,9 @@ h2.title{
 	//position
 	margin: 1em 0 0.5em 0;
 	padding: 0 0 0 2em;
+	&.no-pad{
+		padding: 0;
+	}
 }
 
 p{
@@ -60,4 +144,16 @@ p{
 	line-height: 1.6em;
 	color: $dark-3;
 	text-align: justify;
+}
+
+footer p{
+	//position
+	float: left;
+	//text
+	font-size: 0.95em;
+	font-weight: bold;
+	line-height: 2em;
+	//colors
+	color: darken($light-1, 35%);
+	text-shadow: 0 1px 0 rgba(255,255,255,.6);
 }

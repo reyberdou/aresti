@@ -38,23 +38,44 @@
 								%li
 									%a{:href => "products.html"}Productos
 								%li
+									%a{:href => "budget.html"}Presupuesta
+								%li
 									%a{:href => "contact.html"}Contacto
+			#message
+				.wrapper
+					/ message
+					.grid
+						%h2
+							Ve nuestro catálogo
 			.wrapper
-				/ slider
-				.grid#message
-					%h2
-						Ve nuestro catálogo
 				/ content
 				/ product row
-				.grid
+				.grid.grid-pad
 					.cols-1-3.product
-
+						%img{:src => "http://placehold.it/350x300"}
 					.cols-1-3.product
-
+						%img{:src => "http://placehold.it/350x300"}
 					.cols-1-3.product
+						%img{:src => "http://placehold.it/350x300"}
+				/ product row
+				.grid.grid-pad
+					.cols-1-3.product
+						%img{:src => "http://placehold.it/350x300"}
+					.cols-1-3.product
+						%img{:src => "http://placehold.it/350x300"}
+					.cols-1-3.product
+						%img{:src => "http://placehold.it/350x300"}
+				/ product row
+				.grid.grid-pad
+					.cols-1-3.product
+						%img{:src => "http://placehold.it/350x300"}
+					.cols-1-3.product
+						%img{:src => "http://placehold.it/350x300"}
+					.cols-1-3.product
+						%img{:src => "http://placehold.it/350x300"}
 		/ copyright
 		%footer
 			.wrapper
 				.grid
-					.cols-1-1
-						© 2013 Luis Castro & Reinaldo Bermudez
+					.cols-1-2
+						%p © 2013 Luis Castro & Reinaldo Bermudez
