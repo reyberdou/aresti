@@ -27,6 +27,22 @@ div.orbit-wrapper {
     width: 1px;
     height: 1px;
     position: relative; }
+@media screen and (max-width: 1400px) {
+    div.orbit, div.orbit-wrapper, div.orbit>img {
+        width:1152px !important;
+    }
+}
+@media screen and (max-width: 768px) {
+    div.orbit, div.orbit-wrapper, div.orbit>img {
+        width:692px !important;
+        height:245px !important;
+    }
+}
+@media screen and (max-width: 480px) {
+    div.orbit, div.orbit-wrapper, div.orbit>img {
+        width:400px !important;
+    }
+}
 
 div.orbit {
     width: 1px;
