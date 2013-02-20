@@ -53,4 +53,10 @@ body{
 	box-shadow: $box-shadow-element;
 }
 
-@import "navigation", "content", "photos", "inputs", "buttons";
+@import "navigation";
+@import "content";
+@import "photos";
+@import "inputs";
+@import "buttons";
+@import "products";
+@import "contact";

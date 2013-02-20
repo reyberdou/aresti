@@ -65,6 +65,10 @@ nav{
 		//size
 		height: 40px;
 		width: 50px;
+		@media screen and (max-width: 768px){
+			//position
+			margin: -1em 0 0 0em;
+		}
 	}
 	//twitter handle
 	.twitter{
@@ -74,5 +78,9 @@ nav{
 		//text
 		color: darken($dark-2, 30%);
 		text-decoration: none;
+		@media screen and (max-width: 768px){
+			//position
+			margin: 0 0 0 5em;
+		}
 	}
 }
