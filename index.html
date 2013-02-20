@@ -18,9 +18,11 @@
     <meta content='' name='googlebot'>
     <!-- Included CSS Files (Compressed) -->
     <link href='css/styles.css' rel='stylesheet'>
+    <link href='vendor/orbit.css' rel='stylesheet'>
+    <link href='css/ie.css' rel='stylesheet'>
     <link href='favicon.ico' rel='shortcut icon' type='image/x-icon'>
-    <!-- IE Fix for HTML5 Tags -->
-    <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+    <script href='js/jquery.min.js' type='text/javascript'></script>
+    <script href='js/orbit.min.js' type='text/javascript'></script>
   </head>
   <body>
     <div class='container'>
@@ -58,7 +60,11 @@
       </nav>
       <!-- slider -->
       <div id='slider'>
-        <img src='http://placehold.it/1282x400'>
+        <div id='featured'>
+          <img src='img/dummy-images/overflow.jpg'>
+          <img src='img/dummy-images/captions.jpg'>
+          <img src='img/dummy-images/features.jpg'>
+        </div>
       </div>
       <!-- content -->
       <div class='highlight_section'>
@@ -129,4 +135,11 @@
       </div>
     </footer>
   </body>
+  <script>
+    //<![CDATA[
+      $(window).load(function() {
+      		 $('#featured').orbit();
+       });
+    //]]>
+  </script>
 </html>
