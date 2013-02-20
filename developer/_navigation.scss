@@ -29,14 +29,29 @@ nav{
 	//size
 	height: 63px;
 	padding: 2em 0 0;
+	@media screen and (max-width: 600px){
+		//size
+		height: 150px;
+		//text
+		font-size: 1em;
+	}
 	ul{
 		//position
 		float: right;
+		@media screen and (max-width: 600px){
+			//position
+			margin: 1em 0;
+			text-align: center;
+		}
 		li{
 			//display type
 			display: inline-block;
 			//position
 			margin-right: 2em;
+			@media screen and (max-width: 600px){
+				//position
+				margin: 1em 2em 0 0;
+			}
 		}
 	}
 	//links
@@ -51,15 +66,19 @@ nav{
 		&:hover{
 			color: $dark-2;
 		}
+		&.selected_page{
+			//effects
+			color: #fff;
+		}
 	}
 	//logo
 	.logo{
 		//position
 		float: left;
-		margin: -1em 0 0 -4.5em;
+		margin: -0.6em 0 0 -4.5em;
 		position: absolute;
 		//background
-		background: url('http://placehold.it/50x40') no-repeat;
+		background: url(../img/logo.png) no-repeat;
 		//text
 		text-indent: -9999px;
 		//size
@@ -67,7 +86,18 @@ nav{
 		width: 50px;
 		@media screen and (max-width: 768px){
 			//position
-			margin: -1em 0 0 0em;
+			margin: -0.6em 0 0 0em;
+		}
+		@media screen and (max-width: 600px){
+			//position
+			float: inherit;
+			margin: -0.6em 0 0 6em;
+		}
+		&:hover{
+			opacity: 0.8;
+		}
+		&:active{
+			opacity: 0.7;
 		}
 	}
 	//twitter handle
@@ -81,6 +111,10 @@ nav{
 		@media screen and (max-width: 768px){
 			//position
 			margin: 0 0 0 5em;
+		}
+		@media screen and (max-width: 600px){
+			//position
+			margin: 0 0 0 9em;
 		}
 	}
 }

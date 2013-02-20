@@ -34,11 +34,13 @@
 						.cols-2-3
 							%ul
 								%li
+									%a{:href => "index.html"}Inicio
+								%li
 									%a{:href => "about.html"}Acerca
 								%li
 									%a{:href => "products.html"}Productos
 								%li
-									%a{:href => "budget.html"}Presupuesta
+									%a.selected_page{:href => "budget.html"}Presupuesta
 								%li
 									%a{:href => "contact.html"}Contacto
 			#message
@@ -49,7 +51,60 @@
 							Realiza un presupuesto con nosotros
 			.wrapper
 				/ content
-
+				.grid
+					/ big area of content
+					.cols-2-3
+						.grid.grid-pad.border-right
+							.cols-1-1
+								%h6
+									A través de nuestra herramienta
+								%p
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non risus diam. Cras fermentum imperdiet lorem, eget pretium nunc fringilla at. Aliquam vel rutrum diam.
+						.grid.grid-pad.border-right.border-top.mobile-hide
+							.cols-1-3.contact_header
+								%p Nombre
+								%p Compañia
+								%p Correo
+								%p Teléfono
+								%p Tipo de pago
+								%p Productos
+							.cols-1-2
+								%form#web-contact
+									%input.text-justify{:type => "text", :placeholder => ""}
+									%input.text-justify{:type => "text", :placeholder => ""}
+									%input.text-justify{:type => "email", :placeholder => ""}
+									%input.text-justify{:type => "tel", :placeholder => ""}
+									%select
+										%option Seleccione...
+										%option Crédito 15 días
+										%option Crédito 30 días
+										%option Contado
+									%textarea.text-justify{:cols => "42", :rows => "10", :placeholder => "Especifique nombre y cantidad..."}
+									%input.button.blue{:type => "submit", :value => "Enviar"}
+						.grid.grid-pad.border-top.mobile-show
+							.cols-1-2
+								%form#mobile-contact
+									%input.text-justify{:type => "text", :placeholder => "Nombre"}
+									%input.text-justify{:type => "text", :placeholder => "Compañia"}
+									%input.text-justify{:type => "email", :placeholder => "Correo Electrónico"}
+									%input.text-justify{:type => "tel", :placeholder => "Teléfono"}
+									%select
+										%option Tipo de Pago
+										%option Crédito 15 días
+										%option Crédito 30 días
+										%option Contado
+									%textarea.text-justify{:cols => "42", :rows => "10", :placeholder => "Especifique nombre y cantidad..."}
+									%input.button.blue{:type => "submit", :value => "Enviar"}
+					/ other info
+					.cols-1-3.big-text-spacing
+						%h2
+							Proceso de solicitud
+						%p
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada erat eu diam eleifend tincidunt. Fusce tincidunt arcu in risus ornare commodo. Ut viverra ligula ac diam ultricies hendrerit. Nunc ultrices, justo vitae ultricies sagittis, odio purus semper ante, laoreet rhoncus est erat sollicitudin est. Duis et arcu nunc, a porta diam. Donec eros mauris, auctor volutpat posuere ut, varius at nulla. Nulla a ligula justo, vitae vestibulum arcu. Integer dui erat, congue a sodales et, venenatis vel ipsum. Sed ultricies leo sollicitudin velit bibendum egestas. Vivamus luctus tincidunt tristique.
+						%br
+						%div.highlight-text
+							%p 
+								%a{:href => "#"}Términos y condiciones
 		/ copyright
 		%footer
 			.wrapper
