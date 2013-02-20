@@ -18,9 +18,11 @@
 		%meta{:content => "", :name => "googlebot"}
 		/ Included CSS Files (Compressed)
 		%link{:href => "css/styles.css", :rel => "stylesheet"}
+		%link{:href => "vendor/orbit.css", :rel => "stylesheet"}
+		%link{:href => "css/ie.css", :rel => "stylesheet"}
 		%link{:href => "favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}
-		/ IE Fix for HTML5 Tags
-		/ [if lt IE 9] <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		%script{:src => "http://code.jquery.com/jquery-latest.min.js"}
+		%script{:src => "js/orbit.min.js", :type => "text/javascript"}
 	%body
 		.container
 			%nav
@@ -44,8 +46,10 @@
 								%li
 									%a{:href => "contact.html"}Contacto
 			/ slider
-			.grid#us
-				%img{:src => "http://placehold.it/1282x400"}
+			.grid#slider
+				%img{:src => "http://placehold.it/1282x450"}
+				%img{:src => "http://placehold.it/1282x450"}
+				%img{:src => "http://placehold.it/1282x450"}
 			/ content
 			.wrapper
 				.grid.grid-pad
@@ -101,3 +105,9 @@
 				.grid
 					.cols-1-2
 						%p © 2013 Luis Castro & Reinaldo Bermudez
+	:javascript
+		$(window).load(function() {
+				$('#slider').orbit({
+					bullets: true
+				});
+		});
