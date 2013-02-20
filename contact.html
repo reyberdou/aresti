@@ -37,6 +37,9 @@
             <div class='cols-2-3'>
               <ul>
                 <li>
+                  <a href='index.html'>Inicio</a>
+                </li>
+                <li>
                   <a href='about.html'>Acerca</a>
                 </li>
                 <li>
@@ -46,7 +49,7 @@
                   <a href='budget.html'>Presupuesta</a>
                 </li>
                 <li>
-                  <a href='contact.html'>Contacto</a>
+                  <a class='selected_page' href='contact.html'>Contacto</a>
                 </li>
               </ul>
             </div>
@@ -58,7 +61,7 @@
           <!-- slider -->
           <div class='grid'>
             <h2>
-              Crea un presupuesto
+              Contacta a nuestro equipo de expertos
             </h2>
           </div>
         </div>
@@ -68,7 +71,7 @@
         <div class='grid'>
           <!-- big area of content -->
           <div class='cols-2-3'>
-            <div class='grid grid-pad'>
+            <div class='grid grid-pad border-right'>
               <div class='cols-1-1'>
                 <h6>
                   Hola
@@ -78,7 +81,7 @@
                 </p>
               </div>
             </div>
-            <div class='grid grid-pad'>
+            <div class='grid grid-pad border-right border-top mobile-hide'>
               <div class='cols-1-3 contact_header'>
                 <p>Nombre</p>
                 <p>Compañia</p>
@@ -87,12 +90,26 @@
                 <p>Mensaje</p>
               </div>
               <div class='cols-1-2'>
-                <input placeholder='' type='text'>
-                <input placeholder='' type='text'>
-                <input placeholder='' type='email'>
-                <input placeholder='' type='tel'>
-                <textarea cols='42' placeholder='' rows='5'></textarea>
-                <input class='button blue' type='submit' value='Enviar'>
+                <form id='web-contact'>
+                  <input placeholder='' type='text'>
+                  <input placeholder='' type='text'>
+                  <input placeholder='' type='email'>
+                  <input placeholder='' type='tel'>
+                  <textarea cols='42' placeholder='' rows='5'></textarea>
+                  <input class='button blue' type='submit' value='Enviar'>
+                </form>
+              </div>
+            </div>
+            <div class='grid grid-pad border-top mobile-show'>
+              <div class='cols-1-2'>
+                <form id='mobile-contact'>
+                  <input class='text-justify' placeholder='Nombre' type='text'>
+                  <input class='text-justify' placeholder='Compañia' type='text'>
+                  <input class='text-justify' placeholder='Correo Electrónico' type='email'>
+                  <input class='text-justify' placeholder='Teléfono' type='tel'>
+                  <textarea class='text-justify' cols='42' placeholder='Mensaje...' rows='5'></textarea>
+                  <input class='button blue' type='submit' value='Enviar'>
+                </form>
               </div>
             </div>
           </div>

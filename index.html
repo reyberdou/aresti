@@ -18,9 +18,12 @@
     <meta content='' name='googlebot'>
     <!-- Included CSS Files (Compressed) -->
     <link href='css/styles.css' rel='stylesheet'>
+    <link href='vendor/orbit.css' rel='stylesheet'>
+    <link href='css/ie.css' rel='stylesheet'>
     <link href='favicon.ico' rel='shortcut icon' type='image/x-icon'>
-    <!-- IE Fix for HTML5 Tags -->
-    <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+    <script src='js/jquery.min.js' type='text/javascript'></script>
+    <script src='http://code.jquery.com/jquery-latest.min.js'></script>
+    <script src='js/orbit.min.js' type='text/javascript'></script>
   </head>
   <body>
     <div class='container'>
@@ -36,6 +39,9 @@
             </div>
             <div class='cols-2-3'>
               <ul>
+                <li>
+                  <a class='selected_page' href='index.html'>Inicio</a>
+                </li>
                 <li>
                   <a href='about.html'>Acerca</a>
                 </li>
@@ -55,7 +61,9 @@
       </nav>
       <!-- slider -->
       <div id='slider'>
-        <img src='http://placehold.it/1282x400'>
+        <img src='http://placehold.it/1282x450'>
+        <img src='http://placehold.it/1282x450'>
+        <img src='http://placehold.it/1282x450'>
       </div>
       <!-- content -->
       <div class='highlight_section'>
@@ -109,7 +117,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada erat eu diam eleifend tincidunt. Fusce tincidunt arcu in risus ornare commodo. Ut viverra ligula ac diam ultricies hendrerit. Nunc ultrices, justo vitae ultricies sagittis, odio purus semper ante, laoreet rhoncus est erat sollicitudin est.
             </p>
             <div class='button blue'>
-              Leer más
+              <a href='about.html' target='_self'>Leer más</a>
             </div>
           </div>
         </div>
@@ -126,4 +134,13 @@
       </div>
     </footer>
   </body>
+  <script>
+    //<![CDATA[
+      $(window).load(function() {
+      		$('#slider').orbit({
+      			bullets: true
+      		});
+      });
+    //]]>
+  </script>
 </html>

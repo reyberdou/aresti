@@ -34,31 +34,33 @@
 						.cols-2-3
 							%ul
 								%li
+									%a{:href => "index.html"}Inicio
+								%li
 									%a{:href => "about.html"}Acerca
 								%li
 									%a{:href => "products.html"}Productos
 								%li
 									%a{:href => "budget.html"}Presupuesta
 								%li
-									%a{:href => "contact.html"}Contacto
+									%a.selected_page{:href => "contact.html"}Contacto
 			#message
 				.wrapper
 					/ slider
 					.grid
 						%h2
-							Crea un presupuesto
+							Contacta a nuestro equipo de expertos
 			.wrapper
 				/ content
 				.grid
 					/ big area of content
 					.cols-2-3
-						.grid.grid-pad
+						.grid.grid-pad.border-right
 							.cols-1-1
 								%h6
 									Hola
 								%p
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non risus diam. Cras fermentum imperdiet lorem, eget pretium nunc fringilla at. Aliquam vel rutrum diam.
-						.grid.grid-pad
+						.grid.grid-pad.border-right.border-top.mobile-hide
 							.cols-1-3.contact_header
 								%p Nombre
 								%p Compañia
@@ -66,12 +68,22 @@
 								%p Teléfono
 								%p Mensaje
 							.cols-1-2
-								%input{:type => "text", :placeholder => ""}
-								%input{:type => "text", :placeholder => ""}
-								%input{:type => "email", :placeholder => ""}
-								%input{:type => "tel", :placeholder => ""}
-								%textarea{:cols => "42", :rows => "5", :placeholder => ""}
-								%input.button.blue{:type => "submit", :value => "Enviar"}
+								%form#web-contact
+									%input{:type => "text", :placeholder => ""}
+									%input{:type => "text", :placeholder => ""}
+									%input{:type => "email", :placeholder => ""}
+									%input{:type => "tel", :placeholder => ""}
+									%textarea{:cols => "42", :rows => "5", :placeholder => ""}
+									%input.button.blue{:type => "submit", :value => "Enviar"}
+						.grid.grid-pad.border-top.mobile-show
+							.cols-1-2
+								%form#mobile-contact
+									%input.text-justify{:type => "text", :placeholder => "Nombre"}
+									%input.text-justify{:type => "text", :placeholder => "Compañia"}
+									%input.text-justify{:type => "email", :placeholder => "Correo Electrónico"}
+									%input.text-justify{:type => "tel", :placeholder => "Teléfono"}
+									%textarea.text-justify{:cols => "42", :rows => "5", :placeholder => "Mensaje..."}
+									%input.button.blue{:type => "submit", :value => "Enviar"}
 					/ other info
 					.cols-1-3.big-text-spacing
 						%h2
