@@ -1,0 +1,62 @@
+@import "compass";
+//----- variables ------
+$base: #00aed7;
+$inverted: #89c53b;
+//colors goes from 1 to 2, being 1 the most condensed and 2 the lightest
+//light-grays
+$light-1: #eeeeee;
+$light-2: #fbfbfb;
+//dark-grays
+$dark-1: #121314;
+$dark-2: #e2e2e2;
+//effects
+$transition: all 0.3s ease-in-out;
+//fonts
+$helvetica: "Helvetica Neue", Helvetica, Arial, serif;
+$source_bold: "SourceSansProBold", "Times New Roman", sans-serif;
+$source_light: "SourceSansProLight", "Times New Roman", sans-serif;
+$source: "SourceSansProRegular", "Times New Roman", sans-serif;
+//------- code ---------
+
+//basic styles
+
+.product{
+	//position
+	position: relative;
+	overflow: hidden;
+	//size
+	height: 300px;
+	& img{
+		//size
+		width: 350px;
+		//position
+		@media screen and (max-width: 1400px){
+			//size
+			width: 310px;
+		}
+	}
+	.description{
+		//position
+		position: absolute;
+		top: 0;
+		right: -240px;
+		//size
+		width: 200px;
+		height: 100%;
+		//internals
+		padding: 0.4em;
+		//colors
+		background: rgba($base, 0.8);
+		color: #fff;
+		p{
+			color: #fff;
+		}
+		//effects
+		opacity: 0;
+		@include transition($transition);
+		&.active-description{
+			right: 2px;
+			opacity: 1;
+		}
+	}
+}

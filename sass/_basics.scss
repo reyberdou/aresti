@@ -1,0 +1,45 @@
+//basic styles
+body{
+	//setting initial font
+	font-size: 16px;
+	font-family: $helvetica;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	//background
+	background: $dark-2;
+	//size
+	width: 90%;
+	max-width: 1282px;	
+	height: auto;
+	//position
+	margin: 2.25em auto;
+	//effect
+	overflow-y: scroll;
+	@media screen and (max-width: 600px){
+		//size
+		width: 100%;
+		//position
+		margin: 0em auto;
+		//effect
+		overflow-x: hidden;
+	}
+}
+
+.container{
+	//background
+	background: $light-2;
+	//box shadow
+	$box-shadow-element: 0 0 60px rgba(#000 ,.2);
+	//effects
+	-webkit-box-shadow: $box-shadow-element;
+	box-shadow: $box-shadow-element;
+	@media screen and (max-width: 600px){
+		//box shadow
+		$box-shadow-element: none;
+		//effects
+		-webkit-box-shadow: $box-shadow-element;
+		box-shadow: $box-shadow-element;
+	}
+}
