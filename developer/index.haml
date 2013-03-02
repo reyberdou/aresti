@@ -19,11 +19,14 @@
 		/ Included CSS Files (Compressed)
 		%link{:href => "css/styles.css", :rel => "stylesheet"}
 		%link{:href => "vendor/orbit.css", :rel => "stylesheet"}
+		%link{:href => "vendor/reveal.css", :rel => "stylesheet"}
 		%link{:href => "css/ie.css", :rel => "stylesheet"}
 		%link{:href => "favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}
-		%script{:src => "js/jquery.min.js", :type => "text/javascript"}
-		%script{:src => "http://code.jquery.com/jquery-latest.min.js"}
-		%script{:src => "js/orbit.min.js", :type => "text/javascript"}
+		%script{:src => "js/vendor/jquery.min.js", :type => "text/javascript"}
+		/ %script{:src => "http://code.jquery.com/jquery-latest.min.js"}
+		%script{:src => "js/vendor/orbit.min.js", :type => "text/javascript"}
+		%script{:src => "js/vendor/reveal.min.js", :type => "text/javascript"}
+		%script{:src => "js/main-ck.js", :type => "text/javascript"}
 	%body
 		.container
 			%nav
@@ -33,7 +36,7 @@
 						.cols-1-3
 							%a{:href => "index.html"}
 								.logo Aresti Logo
-							.twitter @twitterhandle
+							.twitter.main Aresti de Venezuela C.A.
 						.cols-2-3
 							%ul
 								%li
@@ -47,7 +50,7 @@
 								%li
 									%a{:href => "contact.html"}Contacto
 			/ slider
-			#slider
+			.wrapper#slider
 				%img{:src => "http://placehold.it/1282x450"}
 				%img{:src => "http://placehold.it/1282x450"}
 				%img{:src => "http://placehold.it/1282x450"}
@@ -75,27 +78,30 @@
 				.grid
 					/ big image
 					.cols-2-3
-						%img{:src => "http://placehold.it/650x425"}
+						%img{:src => "http://placehold.it/650x450"}
 					.cols-1-3
 						%h2.title.clients
 							Clientela
 						%p
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada erat eu diam eleifend tincidunt. Fusce tincidunt arcu in risus ornare commodo. Ut viverra ligula ac diam ultricies hendrerit. Nunc ultrices, justo vitae ultricies sagittis, odio purus semper ante, laoreet rhoncus est erat sollicitudin est.
-						%h2.title.install
-							Instalación
+							Nuestros principales clientes son Kromi Market, EPA, Enne, Auto mercados San Diego, Eco Market, Librerías Nacho, De Candido entre otros.
 						%p
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada erat eu diam eleifend tincidunt. Fusce tincidunt arcu in risus ornare commodo. Ut viverra ligula ac diam ultricies hendrerit. Nunc ultrices, justo vitae ultricies sagittis, odio purus semper ante, laoreet rhoncus est erat sollicitudin est.
-						.button.blue
-							%a{:href => "about.html", :target =>"_self"}Leer más
+							Lo invitamos a formar parte de nuestra familia, conozca sobre nuestros productos y como Aresti puede ayudar a la seguridad de sus productos.
+						%h2.title.install
+							Distribuidores
+						%p
+							Tenemos la distribución exclusiva de las principales marcas de seguridad, que ofrecen una alta calidad en sus productos y satisfacerán las necesidades de su empresa.
+						%p
+							Ammersec, Century, AM Secure Labs, WG
+						%a#install_button{:href => "#"}
+							.button.blue
+								Leer más
 		/ copyright
 		%footer
 			.wrapper
 				.grid
 					.cols-1-2
-						%p © 2013 Luis Castro & Reinaldo Bermudez
-	:javascript
-		$(window).load(function() {
-				$('#slider').orbit({
-					bullets: true
-				});
-		});
+						%p R.I.F. J-29852381-6 | © 2013 Luis Castro &#038; Reinaldo Bermudez
+		#install_read_more.reveal-modal
+			%h1 hi
+			%p hello sir this is a test
+			%a.close-reveal-modal &#215;
