@@ -2,6 +2,17 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8248",
   "files" : {
+    "\/js\/vendor\/reveal.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/vendor\/reveal.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/vendor\/reveal.min-ck.js",
+      "fileType" : 64
+    },
     "\/img\/orbit\/mask-black.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -24,17 +35,6 @@
       "outputAbbreviatedPath" : "\/css\/screen.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/js\/vendor\/reveal.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/vendor\/reveal.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/vendor\/reveal.min-ck.js",
-      "fileType" : 64
     },
     "\/js\/vendor\/reveal.min-ck.js" : {
       "ignoreWasSetByUser" : 0,
@@ -65,6 +65,30 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/sass\/_navigation.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/_navigation.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_navigation.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/sass\/styles.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/styles.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/styles.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/developer\/404.haml" : {
       "inputAbbreviatedPath" : "\/developer\/404.haml",
       "outputAbbreviatedPath" : "\/404.html",
@@ -80,30 +104,6 @@
       "hidden" : 0,
       "fileType" : 256,
       "outputStyle" : 0
-    },
-    "\/sass\/styles.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/styles.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/styles.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/sass\/_navigation.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/_navigation.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_navigation.css",
-      "fileType" : 4,
-      "debugStyle" : 0
     },
     "\/js\/vendor\/orbit.min-ck.js" : {
       "ignoreWasSetByUser" : 0,
@@ -573,6 +573,17 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/js\/vendor\/jquery.min-ck.js",
       "fileType" : 64
+    },
+    "\/img\/clients.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/clients.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/clients.jpg",
+      "initialSize" : 27645,
+      "fileType" : 4096
     },
     "\/budget.html" : {
       "ignoreWasSetByUser" : 0,

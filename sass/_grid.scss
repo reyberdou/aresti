@@ -10,6 +10,12 @@ $pad: 20px;
 	@media screen and (max-width: 1400px) {
 		width:1000px;
 	}
+	@media screen and (max-width: 1224px){
+		width: 900px;
+	}
+	@media screen and (max-width: 1024px) and (min-width: 769px){
+		width: 792px;
+	}
 	@media screen and (max-width: 768px) {
 		width:650px;
 	}

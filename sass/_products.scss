@@ -10,7 +10,7 @@ $light-2: #fbfbfb;
 $dark-1: #121314;
 $dark-2: #e2e2e2;
 //effects
-$transition: all 0.3s ease-in-out;
+$transition: all 0.5s ease-in-out;
 //fonts
 $helvetica: "Helvetica Neue", Helvetica, Arial, serif;
 $source_bold: "SourceSansProBold", "Times New Roman", sans-serif;
@@ -26,6 +26,9 @@ $source: "SourceSansProRegular", "Times New Roman", sans-serif;
 	overflow: hidden;
 	//size
 	height: 300px;
+	width: 350px;
+	//effect
+	cursor: pointer;
 	& img{
 		//size
 		width: 350px;
@@ -43,6 +46,9 @@ $source: "SourceSansProRegular", "Times New Roman", sans-serif;
 		//size
 		width: 200px;
 		height: 100%;
+		@media screen and (max-width: 1024px){
+			height: 88.5%;
+		}
 		//internals
 		padding: 0.4em;
 		//colors
@@ -55,7 +61,7 @@ $source: "SourceSansProRegular", "Times New Roman", sans-serif;
 		opacity: 0;
 		@include transition($transition);
 		&.active-description{
-			right: 2px;
+			right: 0;
 			opacity: 1;
 		}
 	}
