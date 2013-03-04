@@ -27,6 +27,12 @@ div.orbit-wrapper {
     width: 1px;
     height: 1px;
     position: relative; }
+@media screen and (max-width: 2560px) {
+    div.orbit, div.orbit-wrapper, div.orbit>img {
+        position: relative;
+        width:100% !important;
+    }
+}
 
 div.orbit {
     width: 1px;
@@ -182,7 +188,7 @@ div.slider-nav span.left {
     cursor: pointer;
     color: #999;
     text-indent: -9999px;
-    background: url(../img/orbit/bullets.jpg) no-repeat 4px 0;
+    background: url(../img/orbit/bullets.png) no-repeat 4px 0;
     width: 13px;
     height: 12px;
     overflow: hidden; }
