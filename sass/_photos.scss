@@ -53,17 +53,32 @@ $source: "SourceSansProRegular", "Times New Roman", sans-serif;
 }
 
 .inline-img{
-	@media screen and (max-width: 768px){
-		width:400px;
-		height: 300px;
+	@media screen and (max-width: 1200px){
+		//size
+		width: 525px;
 	}
-	@media screen and (max-width: 480px){
+	@media screen and (max-width: 768px){
+		//display
 		display: none;
+	}
+	&.ipad-only{
+		//display
+		width: 400px;
+		display: none;
+		@media screen and (max-width: 768px){
+			//display
+			display: inherit;
+		}
+		@media screen and (max-width: 480px){
+			//display
+			display: none;
+		}
 	}
 }
 
 .reveal-modal{
 	@media screen and (max-width: 480px){
+		//size
 		width: 200px !important;
 	}
 }

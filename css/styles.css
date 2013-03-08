@@ -384,22 +384,38 @@ nav .twitter.main {
   background: url("../img/icons.png") no-repeat -124px -14px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   /* line 55, ../sass/_photos.scss */
   .inline-img {
-    width: 400px;
-    height: 300px;
+    width: 525px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   /* line 55, ../sass/_photos.scss */
   .inline-img {
     display: none;
   }
 }
+/* line 64, ../sass/_photos.scss */
+.inline-img.ipad-only {
+  width: 400px;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  /* line 64, ../sass/_photos.scss */
+  .inline-img.ipad-only {
+    display: inherit;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 64, ../sass/_photos.scss */
+  .inline-img.ipad-only {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 480px) {
-  /* line 65, ../sass/_photos.scss */
+  /* line 79, ../sass/_photos.scss */
   .reveal-modal {
     width: 200px !important;
   }
@@ -817,6 +833,6 @@ ul.with_styles li {
 @media screen and (max-width: 480px) {
   /* line 228, ../sass/_content.scss */
   .mobile-smaller {
-    font-size: 50% !important;
+    font-size: 60% !important;
   }
 }
