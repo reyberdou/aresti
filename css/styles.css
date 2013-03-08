@@ -83,7 +83,7 @@ table {
 @media screen and (max-width: 480px) {
   /* line 7, ../sass/_grid.scss */
   .wrapper {
-    width: 400px;
+    width: 320px;
   }
 }
 
@@ -372,6 +372,22 @@ nav .twitter.main {
   background: url("../img/icons.png") no-repeat -124px -14px;
 }
 
+@media screen and (max-width: 480px) {
+  /* line 55, ../sass/_photos.scss */
+  .inline-img {
+    display: none;
+    width: 300px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* line 63, ../sass/_photos.scss */
+  .reveal-modal {
+    width: 200px !important;
+  }
+}
+
 /* line 22, ../sass/_inputs.scss */
 input[type*='text'], input[type*='email'], input[type*='tel'], textarea, select {
   width: 99%;
@@ -385,8 +401,6 @@ input[type*='text'], input[type*='email'], input[type*='tel'], textarea, select 
   border: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1), 0 1px 0 white;
   box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1), 0 1px 0 white;
-  -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -400,17 +414,17 @@ input[type*='text'], input[type*='email'], input[type*='tel'], textarea, select 
   text-transform: capitalize;
 }
 
-/* line 55, ../sass/_inputs.scss */
+/* line 56, ../sass/_inputs.scss */
 textarea, input[type*='email'] {
   text-transform: none;
 }
 
-/* line 60, ../sass/_inputs.scss */
+/* line 61, ../sass/_inputs.scss */
 textarea {
   resize: none;
 }
 
-/* line 65, ../sass/_inputs.scss */
+/* line 66, ../sass/_inputs.scss */
 select {
   height: 30px;
 }
@@ -481,7 +495,14 @@ select {
     width: 310px;
   }
 }
-/* line 41, ../sass/_products.scss */
+@media screen and (max-width: 480px) {
+  /* line 32, ../sass/_products.scss */
+  .product img {
+    height: 200px;
+    width: 290px;
+  }
+}
+/* line 46, ../sass/_products.scss */
 .product .description {
   position: absolute;
   top: 0;
@@ -498,19 +519,28 @@ select {
   transition: all 0.5s ease-in-out;
 }
 @media screen and (max-width: 1024px) {
-  /* line 41, ../sass/_products.scss */
+  /* line 46, ../sass/_products.scss */
   .product .description {
     height: 88.5%;
   }
 }
-/* line 57, ../sass/_products.scss */
+/* line 62, ../sass/_products.scss */
 .product .description p {
   color: #fff;
 }
-/* line 63, ../sass/_products.scss */
+/* line 68, ../sass/_products.scss */
 .product .description.active-description {
   right: 0;
   opacity: 1;
+}
+@media screen and (max-width: 480px) {
+  /* line 46, ../sass/_products.scss */
+  .product .description {
+    right: 60px;
+    opacity: 1;
+    width: 170px;
+    height: 66.7%;
+  }
 }
 
 /* line 23, ../sass/_contact.scss */
@@ -724,4 +754,9 @@ ul.with_styles li {
 /* line 223, ../sass/_content.scss */
 .text-right {
   text-align: right !important;
+}
+
+/* line 224, ../sass/_content.scss */
+.mobile-smaller {
+  font-size: 70% !important;
 }

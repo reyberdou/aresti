@@ -5,14 +5,14 @@
 
 	$mail->IsSMTP();                                      // Set mailer to use SMTP
 	$mail->SMTPDebug = 1;
-	$mail->Host = 'arestidevenezuela.com';  // Specify main and backup server
+	$mail->Host = 'smtp.gmail.com';  // Specify main and backup server
 	$mail->Port = 465;
 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
-	$mail->Username = 'prueba@arestidevenezuela.com';           // SMTP username
-	$mail->Password = 'Prueba12345';                       // SMTP password
-	//$mail->SMTPSecure = 'ssl';                            // Enable encryption, 'ssl' also accepted
+	$mail->Username = 'castroman099@gmail.com';           // SMTP username
+	$mail->Password = 'kaelthas51';                       // SMTP password
+	$mail->SMTPSecure = 'ssl';                            // Enable encryption, 'ssl' also accepted
 
-	$mail->From = 'prueba@arestidevenezuela.com';
+	$mail->From = 'castroman099@gmail.com';
 	$mail->FromName = 'Luis Castro';
 	$mail->AddAddress('luisecastro@outlook.com', 'Luis');   // Add a recipient
 

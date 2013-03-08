@@ -37,6 +37,11 @@ $source: "SourceSansProRegular", "Times New Roman", sans-serif;
 			//size
 			width: 310px;
 		}
+		@media screen and (max-width: 480px){
+			//size
+			height: 200px;
+			width: 290px;
+		}
 	}
 	.description{
 		//position
@@ -63,6 +68,14 @@ $source: "SourceSansProRegular", "Times New Roman", sans-serif;
 		&.active-description{
 			right: 0;
 			opacity: 1;
+		}
+		@media screen and (max-width: 480px){
+			//position
+			right: 60px;
+			opacity: 1;
+			//size
+			width: 170px;
+			height: 66.7%;
 		}
 	}
 }
