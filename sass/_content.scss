@@ -39,6 +39,10 @@ $source: "SourceSansProRegular", "Times New Roman", sans-serif;
 	//size
 	width: 100%;
 	height: 45px;
+	@media screen and (max-width: 600px){
+		//size
+		height: auto;
+	}
 	//align
 	padding: 0.5em 1em;
 	//effects
@@ -221,3 +225,9 @@ ul.with_styles{
 .text-center{text-align: center !important;}
 .text-left{text-align: left !important;}
 .text-right{text-align: right !important;}
+.mobile-smaller{
+	font-size: 70% !important;
+	@media screen and (max-width: 480px){
+		font-size: 60% !important;
+	}
+}

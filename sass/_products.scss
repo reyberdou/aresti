@@ -29,6 +29,18 @@ $source: "SourceSansProRegular", "Times New Roman", sans-serif;
 	width: 350px;
 	//effect
 	cursor: pointer;
+	@media screen and (max-width: 768px){
+		//size
+		height: 167px;
+		width: 195px;
+	}
+	@media screen and (max-width: 480px){
+		//size
+		height: 167px;
+		width: 290px;
+		//position
+		margin: 1em 0;
+	}
 	& img{
 		//size
 		width: 350px;
@@ -36,6 +48,16 @@ $source: "SourceSansProRegular", "Times New Roman", sans-serif;
 		@media screen and (max-width: 1400px){
 			//size
 			width: 310px;
+		}
+		@media screen and (max-width: 768px){
+			//size
+			height: 167px;
+			width: 195px;
+		}
+		@media screen and (max-width: 480px){
+			//size
+			height: 200px;
+			width: 290px;
 		}
 	}
 	.description{
@@ -63,6 +85,22 @@ $source: "SourceSansProRegular", "Times New Roman", sans-serif;
 		&.active-description{
 			right: 0;
 			opacity: 1;
+		}
+		@media screen and (max-width: 768px){
+			//position
+			right: 0;
+			opacity: 1;
+			//size
+			width: 110px;
+			height: 100%;
+		}
+		@media screen and (max-width: 480px){
+			//position
+			right: 0;
+			opacity: 1;
+			//size
+			width: 170px;
+			height: 100%;
 		}
 	}
 }
