@@ -97,6 +97,10 @@ nav{
 			float: inherit;
 			margin: -0.6em 0 0 6em;
 		}
+		@media screen and (max-width: 480px){
+			//position
+			margin: -0.6em 0 0 3em;
+		}
 		&:hover{
 			opacity: 0.8;
 		}
@@ -123,6 +127,10 @@ nav{
 		@media screen and (max-width: 600px){
 			//position
 			margin: 0 0 0 9em;
+		}
+		@media screen and (max-width: 480px){
+			//position
+			margin: 0 0 0 6em;
 		}
 		&.main{
 			font-weight: bold;

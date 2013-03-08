@@ -53,10 +53,12 @@ $source: "SourceSansProRegular", "Times New Roman", sans-serif;
 }
 
 .inline-img{
+	@media screen and (max-width: 768px){
+		width:400px;
+		height: 300px;
+	}
 	@media screen and (max-width: 480px){
 		display: none;
-		width:300px;
-		height: 250px;
 	}
 }
 
