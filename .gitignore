@@ -3,4 +3,4 @@
 
 *.json
 
-*.scssc
+lib/test_mail.php
