@@ -8,13 +8,13 @@
 	$mail->Host = 'smtp.gmail.com';  // Specify main and backup server
 	$mail->Port = 465;
 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
-	$mail->Username = 'castroman099@gmail.com';           // SMTP username
-	$mail->Password = 'kaelthas51';                       // SMTP password
+	$mail->Username = 'mail';           // SMTP username
+	$mail->Password = 'password';                       // SMTP password
 	$mail->SMTPSecure = 'ssl';                            // Enable encryption, 'ssl' also accepted
 
-	$mail->From = 'castroman099@gmail.com';
-	$mail->FromName = 'Luis Castro';
-	$mail->AddAddress('luisecastro@outlook.com', 'Luis');   // Add a recipient
+	$mail->From = 'mail';
+	$mail->FromName = 'person';
+	$mail->AddAddress('mail', 'name');   // Add a recipient
 
 	$mail->WordWrap = 50;                                 // Set word wrap to 50 characters
 
